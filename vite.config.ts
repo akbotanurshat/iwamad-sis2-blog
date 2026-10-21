@@ -1,16 +1,14 @@
- /// <reference types="vitest/config" />
-import react from '@vitejs/plugin-react'
+/// <reference types="vitest/config" />
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/iwamad-sis2-blog/',
-  build: { outDir: 'docs' },
+  base: '/iwamad-sis2-blog/', 
+  build: { outDir: 'docs' }, 
   test: {
     environment: 'jsdom',
     globals: true,
     setupFiles: './src/setupTests.ts',
   },
 })
-
