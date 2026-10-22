@@ -9,13 +9,12 @@ function Header({ name, role }: HeaderProps) {
   return (
     <header className="header">
       <div className="header-brand">
-        {/* Логотиптің суреті алынып тасталды, себебі logo импорты жоқ */}
         <div>
           <h1>{name}</h1>
           <p>{role}</p>
         </div>
       </div>
-      <nav className="nav">
+      <nav className="nav" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/posts">Posts</NavLink>
         <NavLink to="/contact">Contact</NavLink>
