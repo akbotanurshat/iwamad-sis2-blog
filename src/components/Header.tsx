@@ -9,12 +9,10 @@ function Header({ name, role }: HeaderProps) {
   return (
     <header className="header">
       <div className="header-brand">
-        <div>
-          <h1>{name}</h1>
-          <p>{role}</p>
-        </div>
+        <h1>{name}</h1>
+        <p>{role}</p>
       </div>
-      <nav className="nav" style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+      <nav className="nav">
         <NavLink to="/" end>Home</NavLink>
         <NavLink to="/posts">Posts</NavLink>
         <NavLink to="/contact">Contact</NavLink>
